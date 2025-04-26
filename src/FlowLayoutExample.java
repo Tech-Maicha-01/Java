@@ -13,6 +13,7 @@ public class FlowLayoutExample{
         frame.add(new Button("Button 3"));
         frame.add(new Button("Button 4"));
         frame.add(new Button("Button 5"));
+        frame.add(new Button("Button 6"));
 
         // Frame settings
         frame.setSize(400, 200);
