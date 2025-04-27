@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class GridLayoutExample {
+public class GridLayoutExample{
     public static void main(String[] args) {
         // Create a new JFrame (main window)
         JFrame frame = new JFrame("GridLayout Example");
