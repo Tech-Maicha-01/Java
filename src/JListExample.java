@@ -1,3 +1,7 @@
+// Jlist is used to display a list of items in a scrollable view. It allows users to select one or more items from the list.
+// Users can select one or multiple items 
+// Its like vertical menu with scroll bar.
+
 import javax.swing.*;
 
 public class JListExample {

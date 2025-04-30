@@ -7,6 +7,7 @@ public class TextAreaExample {
 
         // Create a TextArea (5 rows, 20 columns)
         JTextArea textArea = new JTextArea(5, 20);
+        
 
         // Set the text inside TextArea
         textArea.setText("Write your feedback here...");
