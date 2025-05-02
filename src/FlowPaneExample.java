@@ -1,3 +1,8 @@
+// FlowPane arranges nodes in a flow , either horizontally or vertically .
+
+
+
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
