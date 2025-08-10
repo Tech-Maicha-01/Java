@@ -22,7 +22,7 @@ public class SimpleServer {
             System.out.println("Client connected!");
 
             // Step 3: Create an input stream to receive data from the client
-            BufferedReader in = new BufferedReader(new (socket.getInputStream()));
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             String message = in.readLine();  // Read a line of text from the client
             System.out.println("Message from client: " + message);
 

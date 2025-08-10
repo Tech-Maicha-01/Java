@@ -7,7 +7,7 @@ public class FetchMultipleRows {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/world";
         String user = "root";
-        String password = "prensu17"; 
+        String password = ""; 
 
         try {
             // Load JDBC driver

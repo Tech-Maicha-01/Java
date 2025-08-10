@@ -4,7 +4,7 @@ public class PreparedStatementDemo {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/world";
         String user = "root";
-        String password = "prensu17"; 
+        String password = ""; 
         try {
             // Load MySQL JDBC Driver
             Class.forName("com.mysql.cj.jdbc.Driver");

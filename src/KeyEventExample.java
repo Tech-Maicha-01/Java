@@ -1,34 +1,42 @@
 import javax.swing.*;
 import java.awt.event.*;
 
-public class KeyEventExample extends JFrame implements KeyListener {
-    JTextField textField;
+public class KeyEventExample extends JFrame  implements KeyListener{
+    JLabel label;
 
-    KeyEventExample() {
-        textField = new JTextField();
-        textField.setBounds(50, 50, 200, 30);
-        textField.addKeyListener(this);
+    public KeyEventExample()
+    {
+        label=new JLabel();
 
-        add(textField);
-        setSize(300, 200);
+        label.setBounds(50,30,200,50);
+        label.addKeyListener(this);
+        add(label);
+        setSize(300,200);
         setLayout(null);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+
     }
 
-    public void keyPressed(KeyEvent e) {
-        textField.setText("Key Pressed");
+
+
+    public void KeyPressed(KeyEvent e)
+    {
+        label.setText("Key Pressed:"+e.getKeyCode());
     }
 
-    public void keyReleased(KeyEvent e) {
-        textField.setText("Key Released");
+    public void keyReleased(KeyEvent e)
+    {
+        label.setText("Key Released: "+e.getKeyCode());
     }
 
-    public void keyTyped(KeyEvent e) {
-        textField.setText("Key Typed");
+    public void KeyTyped(KeyEvent e )
+    {
+        label.setText("Key typed:"+e.getKeyChar());
     }
 
-    public static void main(String[] args) {
-        new KeyEventExample();
+    public static void main(String[] args)
+    {
+         new KeyEventExample();
     }
-}
+} 
